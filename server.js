@@ -5,7 +5,10 @@ var auth = require('./auth.json');
 var fs = require('fs'),
     path = require('path');
 
-var courses = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '14', '15', '16', '17', '18', '20', '21', '21A', 'CMS', '21W', '21G', '21H', '21L', '21M', 'WGS', '22', '24', 'CC', 'EC', 'EM', 'ES', 'HST', 'IDS', 'MAS', 'SCM', 'STS']
+var courses = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+ '11', '12', '14', '15', '16', '17', '18', '20',
+ '21', '21A', 'CMS', '21W', '21G', '21H', '21L', '21M', 'WGS',
+  '22', '24', 'CC', 'EC', 'EM', 'ES', 'HST', 'IDS', 'MAS', 'SCM', 'STS']
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console, {
@@ -85,7 +88,7 @@ function zip(a, b) {
   var array_b = b.split(" ");
   var c = ""
   var i = 0;
-  for (i = 0; i < Math.min(array_a.length, array_b.length)-1; i+=2) {
+  for (i = 0; i < Math.min(array_a.length, array_b.length-1); i+=2) {
     c += array_a[i] + " " + array_b[i+1] + " ";
   }
   if (array_a.length > array_b.length) {
