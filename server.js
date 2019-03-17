@@ -95,4 +95,4 @@ function zip(a, b) {
     c += array_b.slice(i).join(" ");
   }
   return c;
-}
+};
