@@ -1,5 +1,6 @@
 # classmashups
 Discord bot that mashes up two random MIT classes
+
 A "Social Bot" project for the MIT class Network Cultures (CMS.614), Spring 2019.
 My essay write-up on the bot can be found [here](https://docs.google.com/document/d/1Kk7jz_Fm0Sv1bL70r4efhkbJuYeruxRtFhT0uMNAg2E/edit?usp=sharing)
 
